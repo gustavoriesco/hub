@@ -3,23 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Gustavo Riesco Lind · Economista, consultor y docente</title>
-<meta name="description" content="CV profesional de Gustavo Riesco Lind: inteligencia de mercados, estudios estratégicos, docencia e investigación.">
+<title>Gustavo Riesco Lind · CV profesional</title>
+<script>
+(function(){var r=document.documentElement,g=null,t=null;
+try{g=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}
+if(g!=='es'&&g!=='en')g=/^es/i.test(navigator.language||'es')?'es':'en';
+r.lang=g;if(t==='light'||t==='dark')r.setAttribute('data-theme',t)})();
+</script>
 <style>
 :root{--bg:#f8f7f4;--surface:#fff;--text:#1d2530;--muted:#5b6573;--accent:#1f3a5f;--accent-soft:#e6ecf4;--line:#dcdfe4;
   box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151c;--surface:#171e28;--text:#e8ecf1;--muted:#9aa5b4;--accent:#8fb4e8;--accent-soft:#1d2a3d;--line:#2a3341;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#10151c;--surface:#171e28;--text:#e8ecf1;--muted:#9aa5b4;--accent:#8fb4e8;--accent-soft:#1d2a3d;--line:#2a3341;color-scheme:dark}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);height:100%}
+html[lang="en"] es,html[lang="es"] en{display:none}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:10}
 h1,h2,h3,nav,.date,.tag,.meta,button,.btn{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 a{color:var(--accent)}
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--surface);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
-nav .in{max-width:880px;margin:0 auto;padding:0 20px;display:flex;gap:4px}
+nav .in{max-width:880px;margin:0 auto;padding:0 112px 0 20px;display:flex;gap:4px}
 nav a{padding:16px 12px;font-size:14px;text-decoration:none;color:var(--muted);font-weight:500}
 nav a:hover{color:var(--accent)}
+.ctl{position:fixed;z-index:11;top:calc(env(safe-area-inset-top,0px) + 8px);right:max(14px,env(safe-area-inset-right,0px));display:flex;gap:8px}
+.ctl button{height:36px;min-width:36px;border-radius:18px;border:1px solid var(--line);background:var(--surface);color:var(--accent);font-size:18px;line-height:1;cursor:pointer;padding:0 10px;display:flex;align-items:center;justify-content:center}
+.ctl button#lang{font-size:13px;font-weight:700;letter-spacing:.04em}
+.ctl button:hover{background:var(--accent-soft)}
+.ctl button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 header{background:var(--surface);border-bottom:1px solid var(--line)}
 .wrap{max-width:880px;margin:0 auto;padding:0 20px}
 .hero{padding:56px 0 44px}
@@ -55,56 +66,60 @@ h3{font-size:18px;margin:0 0 2px;line-height:1.3}
 .lang .card p{color:var(--text)}
 footer{margin-top:56px;padding:28px 0 36px;border-top:1px solid var(--line);background:var(--surface);font:14px system-ui,sans-serif;color:var(--muted)}
 @media (max-width:640px){.item{grid-template-columns:1fr;padding-bottom:22px}.date{padding:0}.hero{padding:40px 0 32px}}
-@media print{nav,.btns,body::before{display:none}body{background:#fff;color:#000}}
+@media print{nav,.btns,.ctl,body::before{display:none}body{background:#fff;color:#000}}
 </style>
 </head>
 <body>
+<div class="ctl">
+  <button id="lang" type="button"></button>
+  <button id="theme" type="button"></button>
+</div>
 <header>
   <div class="wrap hero">
-    <p class="kicker">Economista · Consultor · Docente</p>
+    <p class="kicker"><es>Economista · Consultor · Docente</es><en>Economist · Consultant · Lecturer</en></p>
     <h1>Gustavo Riesco Lind</h1>
-    <p class="lead">Consultor en inteligencia de mercados y estudios estratégicos, docente e investigador. Más de 25 años entre la empresa, la universidad y la política pública.</p>
+    <p class="lead"><es>Consultor en inteligencia de mercados y estudios estratégicos, docente e investigador. Más de 25 años entre la empresa, la universidad y la política pública.</es><en>Market intelligence and strategic studies consultant, lecturer and researcher. Over 25 years across business, academia and public policy.</en></p>
     <div class="btns">
-      <a class="btn" href="mailto:griesco@aurumperu.com">Contactar</a>
+      <a class="btn" href="mailto:griesco@aurumperu.com"><es>Contactar</es><en>Get in touch</en></a>
       <a class="btn alt" href="https://aurumperu.com" target="_blank" rel="noopener">aurumperu.com</a>
     </div>
     <div class="stats">
-      <div class="stat"><b>2007</b><span>Cofundador de Aurum Consultoría y Mercado</span></div>
-      <div class="stat"><b>3</b><span>libros y 4 capítulos publicados</span></div>
-      <div class="stat"><b>6</b><span>universidades como docente</span></div>
-      <div class="stat"><b>3</b><span>idiomas: español, inglés y francés</span></div>
+      <div class="stat"><b>2007</b><span><es>Cofundador de Aurum Consultoría y Mercado</es><en>Co-founder of Aurum Consultoría y Mercado</en></span></div>
+      <div class="stat"><b>3</b><span><es>libros y 4 capítulos publicados</es><en>books and 4 chapters published</en></span></div>
+      <div class="stat"><b>6</b><span><es>universidades como docente</es><en>universities taught at</en></span></div>
+      <div class="stat"><b>3</b><span><es>idiomas: español, inglés y francés</es><en>languages: Spanish, English and French</en></span></div>
     </div>
   </div>
 </header>
 <nav><div class="in">
-  <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#docencia">Docencia</a><a href="#publicaciones">Publicaciones</a><a href="#formacion">Formación</a>
+  <a href="#perfil"><es>Perfil</es><en>Profile</en></a><a href="#experiencia"><es>Experiencia</es><en>Experience</en></a><a href="#docencia"><es>Docencia</es><en>Teaching</en></a><a href="#publicaciones"><es>Publicaciones</es><en>Publications</en></a><a href="#formacion"><es>Formación</es><en>Education</en></a>
 </div></nav>
 
 <main class="wrap">
 <section id="perfil">
-  <h2>Perfil</h2>
-  <p>Economista que combina consultoría estratégica, gestión universitaria e investigación aplicada. Como socio gerente de Aurum dirige estudios de mercado, análisis de industria, planes estratégicos y evaluación de proyectos de inversión para empresas, instituciones y compañías mineras. Ha dirigido un centro de investigación, editado revistas académicas y de negocios, y publicado sobre economía de la familia, políticas sociales, gobiernos locales e historia económica regional.</p>
+  <h2><es>Perfil</es><en>Profile</en></h2>
+  <p><es>Economista que combina consultoría estratégica, gestión universitaria e investigación aplicada. Como socio gerente de Aurum dirige estudios de mercado, análisis de industria, planes estratégicos y evaluación de proyectos de inversión para empresas, instituciones y compañías mineras. Ha dirigido un centro de investigación, editado revistas académicas y de negocios, y publicado sobre economía de la familia, políticas sociales, gobiernos locales e historia económica regional.</es><en>Economist combining strategic consulting, university management and applied research. As managing partner of Aurum, he leads market studies, industry analysis, strategic plans and investment project appraisal for companies, institutions and mining firms. He has directed a research center, edited academic and business journals, and published on family economics, social policy, local government and regional economic history.</en></p>
   <div class="cards" style="margin-top:22px">
-    <div class="card"><h3>Estudios de mercado y demanda</h3><p>Estimación de demanda, disposición a pagar, satisfacción de usuarios, líneas base y estudios de opinión.</p></div>
-    <div class="card"><h3>Econometría e impacto</h3><p>Modelos econométricos, regresión discontinua, evaluación de impacto y Python para ciencia de datos.</p></div>
-    <div class="card"><h3>Estrategia y proyectos</h3><p>Planes estratégicos, análisis de industria, ingreso a nuevos mercados y evaluación de proyectos de inversión.</p></div>
-    <div class="card"><h3>Gestión académica</h3><p>Dirección de centros de investigación, edición de revistas y organización de congresos internacionales.</p></div>
+    <div class="card"><h3><es>Estudios de mercado y demanda</es><en>Market and demand studies</en></h3><p><es>Estimación de demanda, disposición a pagar, satisfacción de usuarios, líneas base y estudios de opinión.</es><en>Demand estimation, willingness to pay, user satisfaction, baseline and opinion studies.</en></p></div>
+    <div class="card"><h3><es>Econometría e impacto</es><en>Econometrics and impact</en></h3><p><es>Modelos econométricos, regresión discontinua, evaluación de impacto y Python para ciencia de datos.</es><en>Econometric models, regression discontinuity, impact evaluation and Python for data science.</en></p></div>
+    <div class="card"><h3><es>Estrategia y proyectos</es><en>Strategy and projects</en></h3><p><es>Planes estratégicos, análisis de industria, ingreso a nuevos mercados y evaluación de proyectos de inversión.</es><en>Strategic plans, industry analysis, new-market entry and investment project appraisal.</en></p></div>
+    <div class="card"><h3><es>Gestión académica</es><en>Academic leadership</en></h3><p><es>Dirección de centros de investigación, edición de revistas y organización de congresos internacionales.</es><en>Research center management, journal editing and organization of international congresses.</en></p></div>
   </div>
 </section>
 
 <section id="experiencia">
-  <h2>Experiencia profesional</h2>
+  <h2><es>Experiencia profesional</es><en>Professional experience</en></h2>
   <div class="item">
-    <div class="date">2007 – presente</div>
+    <div class="date">2007 – <es>presente</es><en>present</en></div>
     <div>
       <h3>Aurum Consultoría y Mercado</h3>
-      <p class="meta">Cofundador y socio gerente · <a href="https://aurumperu.com" target="_blank" rel="noopener">aurumperu.com</a></p>
+      <p class="meta"><es>Cofundador y socio gerente</es><en>Co-founder and managing partner</en> · <a href="https://aurumperu.com" target="_blank" rel="noopener">aurumperu.com</a></p>
       <ul>
-        <li>Estudios de mercado con herramientas estadísticas y econométricas; análisis de industrias y estrategias de ingreso a nuevos mercados.</li>
-        <li>Planes estratégicos para Transaltisa, Socosani, la Cámara de Comercio e Industria de Arequipa, Cementos Yura, Hogar Clínica San Juan de Dios y Clínica Arequipa, entre otros.</li>
-        <li>Estudios de línea base y de opinión, y planes de acción para atender demandas locales, para Southern Peru, Cerro Verde, Milpo, Anglo American y Hochschild Mining.</li>
-        <li>Formulación, evaluación y recomendación de proyectos de inversión en diversos sectores.</li>
-        <li>Editor de la revista de negocios <em>Mercados &amp; Regiones</em> (2014–2020). Ha ejercido cargos de director en la Cámara de Comercio e Industria de Arequipa.</li>
+        <li><es>Estudios de mercado con herramientas estadísticas y econométricas; análisis de industrias y estrategias de ingreso a nuevos mercados.</es><en>Market studies using statistical and econometric tools; industry analysis and new-market entry strategies.</en></li>
+        <li><es>Planes estratégicos para Transaltisa, Socosani, la Cámara de Comercio e Industria de Arequipa, Cementos Yura, Hogar Clínica San Juan de Dios y Clínica Arequipa, entre otros.</es><en>Strategic plans for Transaltisa, Socosani, the Arequipa Chamber of Commerce and Industry, Cementos Yura, Hogar Clínica San Juan de Dios and Clínica Arequipa, among others.</en></li>
+        <li><es>Estudios de línea base y de opinión, y planes de acción para atender demandas locales, para Southern Peru, Cerro Verde, Milpo, Anglo American y Hochschild Mining.</es><en>Baseline and opinion studies, and action plans to address local demands, for Southern Peru, Cerro Verde, Milpo, Anglo American and Hochschild Mining.</en></li>
+        <li><es>Formulación, evaluación y recomendación de proyectos de inversión en diversos sectores.</es><en>Formulation, appraisal and recommendation of investment projects across sectors.</en></li>
+        <li><es>Editor de la revista de negocios <em>Mercados &amp; Regiones</em> (2014–2020). Ha ejercido cargos de director en la Cámara de Comercio e Industria de Arequipa.</es><en>Editor of the business magazine <em>Mercados &amp; Regiones</em> (2014–2020). Has served as a board member of the Arequipa Chamber of Commerce and Industry.</en></li>
       </ul>
       <div class="tags"><span class="tag">PwC Perú</span><span class="tag">Cencosud</span><span class="tag">Caja Nuestra Gente</span><span class="tag">Compartamos</span><span class="tag">La Positiva Seguros</span><span class="tag">Mitsui Automotriz</span><span class="tag">Tecsup</span><span class="tag">Cemento Yura</span><span class="tag">Grupo Caral</span><span class="tag">Rico Pollo</span><span class="tag">Futura Schools</span><span class="tag">Edifica</span><span class="tag">Cassinelli</span><span class="tag">La Ibérica</span></div>
     </div>
@@ -113,71 +128,91 @@ footer{margin-top:56px;padding:28px 0 36px;border-top:1px solid var(--line);back
     <div class="date">2013 – 2022</div>
     <div>
       <h3>Universidad Católica San Pablo (UCSP)</h3>
-      <p class="meta">Departamento de Ciencias Económicas y Empresariales · Arequipa</p>
+      <p class="meta"><es>Departamento de Ciencias Económicas y Empresariales · Arequipa</es><en>Department of Economic and Business Sciences · Arequipa</en></p>
       <ul>
-        <li><b>2022.</b> Profesor asociado al Prorrectorado para el Desarrollo y representante técnico del Observatorio “Comunidad en Marcha”. Miembro del Grupo de Investigación en Innovación y Emprendimiento.</li>
-        <li><b>2019–2021.</b> Director del Centro de Estudios en Economía y Empresa. Organizó el Congreso Internacional de Empresa y Propósito Organizacional: Sostenibilidad Empresarial y Regulación.</li>
-        <li><b>2019–2021.</b> Director y editor de <em>Illustro</em>, revista de investigación del Departamento.</li>
-        <li><b>2013–2019.</b> Jefe del Área de Análisis y Estudios Estratégicos: estudios socioeconómicos y de mercado sobre deserción, satisfacción, acreditación, disposición a pagar y demanda.</li>
+        <li><es><b>2022.</b> Profesor asociado al Prorrectorado para el Desarrollo y representante técnico del Observatorio “Comunidad en Marcha”. Miembro del Grupo de Investigación en Innovación y Emprendimiento.</es><en><b>2022.</b> Associate professor at the Vice-Rectorate for Development and technical representative of the “Comunidad en Marcha” Observatory. Member of the Innovation and Entrepreneurship Research Group.</en></li>
+        <li><es><b>2019–2021.</b> Director del Centro de Estudios en Economía y Empresa. Organizó el Congreso Internacional de Empresa y Propósito Organizacional: Sostenibilidad Empresarial y Regulación.</es><en><b>2019–2021.</b> Director of the Center for Economics and Business Studies. Organized the International Congress on Business and Organizational Purpose: Corporate Sustainability and Regulation.</en></li>
+        <li><es><b>2019–2021.</b> Director y editor de <em>Illustro</em>, revista de investigación del Departamento.</es><en><b>2019–2021.</b> Director and editor of <em>Illustro</em>, the Department’s research journal.</en></li>
+        <li><es><b>2013–2019.</b> Jefe del Área de Análisis y Estudios Estratégicos: estudios socioeconómicos y de mercado sobre deserción, satisfacción, acreditación, disposición a pagar y demanda.</es><en><b>2013–2019.</b> Head of the Strategic Analysis and Studies Unit: socioeconomic and market studies on dropout, satisfaction, accreditation, willingness to pay and demand.</en></li>
       </ul>
     </div>
   </div>
-  <div class="item"><div class="date">2000 – 2003</div><div><h3>Universidad de Piura</h3><p class="meta">Docente-investigador, Programa Académico de Economía</p></div></div>
-  <div class="item"><div class="date">1997 – 1999</div><div><h3>Universidad del Pacífico</h3><p class="meta">Analista, Centro de Investigación (CIUP)</p></div></div>
+  <div class="item"><div class="date">2000 – 2003</div><div><h3>Universidad de Piura</h3><p class="meta"><es>Docente-investigador, Programa Académico de Economía</es><en>Lecturer-researcher, Economics Program</en></p></div></div>
+  <div class="item"><div class="date">1997 – 1999</div><div><h3>Universidad del Pacífico</h3><p class="meta"><es>Analista, Centro de Investigación (CIUP)</es><en>Analyst, Research Center (CIUP)</en></p></div></div>
 </section>
 
 <section id="docencia">
-  <h2>Docencia</h2>
-  <div class="item"><div class="date">2024 – presente</div><div><h3>Universidad Nacional de San Agustín</h3><p class="meta">Maestría en Ciencias Contables y Financieras: cursos de la línea de investigación y tesis.</p></div></div>
-  <div class="item"><div class="date">2023 – presente</div><div><h3>Universidad de Piura</h3><p class="meta">Análisis Cuantitativo de Empresas y Mercados.</p></div></div>
-  <div class="item"><div class="date">2023</div><div><h3>Universidad Católica Santo Toribio de Mogrovejo</h3><p class="meta">Análisis Económico de Decisiones, Maestría en Administración y Dirección de Empresas.</p></div></div>
-  <div class="item"><div class="date">2013 – 2022</div><div><h3>Universidad Católica San Pablo</h3><p class="meta">Organización Industrial, Microeconomía II, Taller de Investigación III y Macroeconomía II, en modalidad presencial y en línea. También módulos en el Diplomado de Políticas Públicas (CIES, 2014–2015) y en el Diplomado de Liderazgo (2011–2014).</p></div></div>
-  <div class="item"><div class="date">2005</div><div><h3>Universidad Católica Santa María</h3><p class="meta">Teoría del Comercio Internacional y Análisis Microeconómico.</p></div></div>
-  <div class="item"><div class="date">1995 – 2003</div><div><h3>Universidad de Piura y Universidad del Pacífico</h3><p class="meta">Microeconomía, Macroeconomía, Evaluación de Proyectos de Inversión, Evaluación Social de Proyectos, Matemática y Geografía e Historia Económica.</p></div></div>
+  <h2><es>Docencia</es><en>Teaching</en></h2>
+  <div class="item"><div class="date">2024 – <es>presente</es><en>present</en></div><div><h3>Universidad Nacional de San Agustín</h3><p class="meta"><es>Maestría en Ciencias Contables y Financieras: cursos de la línea de investigación y tesis.</es><en>Master’s in Accounting and Financial Sciences: research-track courses and thesis supervision.</en></p></div></div>
+  <div class="item"><div class="date">2023 – <es>presente</es><en>present</en></div><div><h3>Universidad de Piura</h3><p class="meta"><es>Análisis Cuantitativo de Empresas y Mercados.</es><en>Quantitative Analysis of Firms and Markets.</en></p></div></div>
+  <div class="item"><div class="date">2023</div><div><h3>Universidad Católica Santo Toribio de Mogrovejo</h3><p class="meta"><es>Análisis Económico de Decisiones, Maestría en Administración y Dirección de Empresas.</es><en>Economic Analysis of Decisions, Master’s in Business Administration and Management.</en></p></div></div>
+  <div class="item"><div class="date">2013 – 2022</div><div><h3>Universidad Católica San Pablo</h3><p class="meta"><es>Organización Industrial, Microeconomía II, Taller de Investigación III y Macroeconomía II, en modalidad presencial y en línea. También módulos en el Diplomado de Políticas Públicas (CIES, 2014–2015) y en el Diplomado de Liderazgo (2011–2014).</es><en>Industrial Organization, Microeconomics II, Research Workshop III and Macroeconomics II, in person and online. Also modules in the Public Policy Diploma (CIES, 2014–2015) and the Leadership Diploma (2011–2014).</en></p></div></div>
+  <div class="item"><div class="date">2005</div><div><h3>Universidad Católica Santa María</h3><p class="meta"><es>Teoría del Comercio Internacional y Análisis Microeconómico.</es><en>International Trade Theory and Microeconomic Analysis.</en></p></div></div>
+  <div class="item"><div class="date">1995 – 2003</div><div><h3><es>Universidad de Piura y Universidad del Pacífico</es><en>Universidad de Piura and Universidad del Pacífico</en></h3><p class="meta"><es>Microeconomía, Macroeconomía, Evaluación de Proyectos de Inversión, Evaluación Social de Proyectos, Matemática y Geografía e Historia Económica.</es><en>Microeconomics, Macroeconomics, Investment Project Appraisal, Social Project Appraisal, Mathematics and Economic Geography and History.</en></p></div></div>
 </section>
 
 <section id="publicaciones">
-  <h2>Publicaciones</h2>
-  <p class="sub" style="margin-top:0">Artículos e informes</p>
-  <p class="pub"><span class="y">En curso</span>Riesco, G. y Arela, R. Does higher education help mayors improve district budget execution rates? · Riesco, G. Entorno socioeconómico e intensidad de dedicación al cuidado informal en el hogar (2010–2024).</p>
-  <p class="pub"><span class="y">2024</span>Riesco, Arela, Sousa y Vilca. ¿Influye en el discurso periodístico el dinero pagado por los gobiernos regionales a la prensa? <em>Trampas de la Comunicación y la Cultura</em>, 89, e072. UNLP.</p>
-  <p class="pub"><span class="y">2019</span>Arela y Riesco. Are women mayors more effective in reducing the crime rate? Sharp regression discontinuity evidence from Peru. <em>Illustro</em>, 10. <a href="https://doi.org/10.36901/illustro.v10i0.1203" target="_blank" rel="noopener">DOI</a></p>
-  <p class="pub"><span class="y">2016</span>Castro, Riesco y Arela. ¿Familia y bienestar? Estructura familiar y satisfacción con la vida personal. <em>Boletim Academia Paulista de Psicologia</em>, 36(90).</p>
-  <p class="pub"><span class="y">2015</span>Riesco y Arela. Impacto de la estructura familiar en la satisfacción con los ingresos en los hogares urbanos en Perú. <em>Economía</em>, 38(76). PUCP.</p>
-  <p class="pub"><span class="y">2015</span>Riesco, Alpaca y Arias. Evolución del pago de coimas a la policía en el Perú (2005–2006 y 2012–2013) y su impacto en la economía familiar. <em>Revista de Investigación</em>, 6, 77–99. UCSP.</p>
-  <p class="pub"><span class="y">2009</span>Riesco y Alburqueque. Impacto de la estructura familiar en niños y adolescentes en el Perú. CIES, Concurso ACDI–IDRC 2007.</p>
-  <p class="sub">Libros</p>
-  <p class="pub"><span class="y">2011</span>Regalado, Berolatti, Martínez y Riesco. <em>Identidad competitiva y desarrollo de marca para la ciudad de Arequipa</em>. ESAN.</p>
-  <p class="pub"><span class="y">2000</span>Vásquez, Cortez y Riesco. <em>Inversión social para un buen gobierno en el Perú</em>. CIUP, 473 pp.</p>
-  <p class="pub"><span class="y">2000</span>Boucher, Fort, Cortez y Riesco. <em>La pequeña agricultura piurana: evidencias sobre ingreso, crédito y asistencia técnica</em>. CIUP–CIPCA.</p>
-  <p class="sub">Capítulos</p>
-  <p class="pub"><span class="y">2019</span>Economía y desarrollo del sur del Perú, 1930–2000. En <em>Historia económica regional del sur del Perú</em>. BCRP.</p>
-  <p class="pub"><span class="y">2012</span>Una herramienta para el diagnóstico y seguimiento de la imagen de ciudades. En <em>Inversión social: evaluación de proyectos y mediciones acotadas</em>. CIUP.</p>
-  <p class="pub"><span class="y">1999</span>Dos capítulos con Vásquez y otros sobre programas sociales y la iniciativa 20/20, en <em>Políticas sociales en el Perú</em> (CIUP) y en el volumen de la CEPAL sobre gasto público en servicios sociales básicos.</p>
-  <p class="sub">Ficción</p>
-  <p class="pub">Autor de los cuentos <em>Pescado crudo con limón</em> y <em>Raw Fish and Lime</em>.</p>
+  <h2><es>Publicaciones</es><en>Publications</en></h2>
+  <p class="sub" style="margin-top:0"><es>Artículos e informes</es><en>Articles and reports</en></p>
+  <p class="pub"><span class="y"><es>En curso</es><en>In progress</en></span>Riesco, G. &amp; Arela, R. Does higher education help mayors improve district budget execution rates? · Riesco, G. Entorno socioeconómico e intensidad de dedicación al cuidado informal en el hogar (2010–2024).</p>
+  <p class="pub"><span class="y">2024</span>Riesco, Arela, Sousa &amp; Vilca. ¿Influye en el discurso periodístico el dinero pagado por los gobiernos regionales a la prensa? <em>Trampas de la Comunicación y la Cultura</em>, 89, e072. UNLP.</p>
+  <p class="pub"><span class="y">2019</span>Arela &amp; Riesco. Are women mayors more effective in reducing the crime rate? Sharp regression discontinuity evidence from Peru. <em>Illustro</em>, 10. <a href="https://doi.org/10.36901/illustro.v10i0.1203" target="_blank" rel="noopener">DOI</a></p>
+  <p class="pub"><span class="y">2016</span>Castro, Riesco &amp; Arela. ¿Familia y bienestar? Estructura familiar y satisfacción con la vida personal. <em>Boletim Academia Paulista de Psicologia</em>, 36(90).</p>
+  <p class="pub"><span class="y">2015</span>Riesco &amp; Arela. Impacto de la estructura familiar en la satisfacción con los ingresos en los hogares urbanos en Perú. <em>Economía</em>, 38(76). PUCP.</p>
+  <p class="pub"><span class="y">2015</span>Riesco, Alpaca &amp; Arias. Evolución del pago de coimas a la policía en el Perú (2005–2006 y 2012–2013) y su impacto en la economía familiar. <em>Revista de Investigación</em>, 6, 77–99. UCSP.</p>
+  <p class="pub"><span class="y">2009</span>Riesco &amp; Alburqueque. Impacto de la estructura familiar en niños y adolescentes en el Perú. CIES, ACDI–IDRC 2007.</p>
+  <p class="sub"><es>Libros</es><en>Books</en></p>
+  <p class="pub"><span class="y">2011</span>Regalado, Berolatti, Martínez &amp; Riesco. <em>Identidad competitiva y desarrollo de marca para la ciudad de Arequipa</em>. ESAN.</p>
+  <p class="pub"><span class="y">2000</span>Vásquez, Cortez &amp; Riesco. <em>Inversión social para un buen gobierno en el Perú</em>. CIUP, 473 pp.</p>
+  <p class="pub"><span class="y">2000</span>Boucher, Fort, Cortez &amp; Riesco. <em>La pequeña agricultura piurana: evidencias sobre ingreso, crédito y asistencia técnica</em>. CIUP–CIPCA.</p>
+  <p class="sub"><es>Capítulos</es><en>Chapters</en></p>
+  <p class="pub"><span class="y">2019</span>Economía y desarrollo del sur del Perú, 1930–2000. <es>En</es><en>In</en> <em>Historia económica regional del sur del Perú</em>. BCRP.</p>
+  <p class="pub"><span class="y">2012</span>Una herramienta para el diagnóstico y seguimiento de la imagen de ciudades. <es>En</es><en>In</en> <em>Inversión social: evaluación de proyectos y mediciones acotadas</em>. CIUP.</p>
+  <p class="pub"><span class="y">1999</span><es>Dos capítulos con Vásquez y otros sobre programas sociales y la iniciativa 20/20, en <em>Políticas sociales en el Perú</em> (CIUP) y en el volumen de la CEPAL sobre gasto público en servicios sociales básicos.</es><en>Two chapters with Vásquez and others on social programs and the 20/20 initiative, in <em>Políticas sociales en el Perú</em> (CIUP) and in the ECLAC volume on public spending on basic social services.</en></p>
+  <p class="sub"><es>Ficción</es><en>Fiction</en></p>
+  <p class="pub"><es>Autor de los cuentos <em>Pescado crudo con limón</em> y <em>Raw Fish and Lime</em>.</es><en>Author of the short stories <em>Pescado crudo con limón</em> and <em>Raw Fish and Lime</em>.</en></p>
 </section>
 
 <section id="formacion">
-  <h2>Formación e idiomas</h2>
-  <div class="item"><div class="date">2017 – 2018</div><div><h3>Pontificia Universidad Católica del Perú</h3><p class="meta">Estudios de doctorado en Economía.</p></div></div>
-  <div class="item"><div class="date">2008 – 2010</div><div><h3>Universidad ESAN</h3><p class="meta">Magíster en Dirección de Empresas (grado: 21 de julio de 2011).</p></div></div>
-  <div class="item"><div class="date">1992 – 1996</div><div><h3>Universidad del Pacífico</h3><p class="meta">Licenciado en Economía (título profesional: 20 de noviembre de 2002) y Bachiller en Economía.</p></div></div>
-  <p class="sub">Formación complementaria</p>
-  <p class="pub"><span class="y">2023–</span>GeorgetownX: Impact Evaluation Methods in Low- and Middle-Income Countries (en curso).</p>
+  <h2><es>Formación e idiomas</es><en>Education and languages</en></h2>
+  <div class="item"><div class="date">2017 – 2018</div><div><h3>Pontificia Universidad Católica del Perú</h3><p class="meta"><es>Estudios de doctorado en Economía.</es><en>Doctoral studies in Economics.</en></p></div></div>
+  <div class="item"><div class="date">2008 – 2010</div><div><h3>Universidad ESAN</h3><p class="meta"><es>Magíster en Dirección de Empresas (grado: 21 de julio de 2011).</es><en>Master’s in Business Management (degree conferred 21 July 2011).</en></p></div></div>
+  <div class="item"><div class="date">1992 – 1996</div><div><h3>Universidad del Pacífico</h3><p class="meta"><es>Licenciado en Economía (título profesional: 20 de noviembre de 2002) y Bachiller en Economía.</es><en>Bachiller (bachelor’s) in Economics, and Licenciado en Economía (professional title, 20 November 2002).</en></p></div></div>
+  <p class="sub"><es>Formación complementaria</es><en>Additional training</en></p>
+  <p class="pub"><span class="y">2023–</span>GeorgetownX: Impact Evaluation Methods in Low- and Middle-Income Countries (<es>en curso</es><en>in progress</en>).</p>
   <p class="pub"><span class="y">2022</span>IBM: Python Basics for Data Science; Introduction to Data Science.</p>
   <p class="pub"><span class="y">2016</span>Erasmus University Rotterdam: Econometrics. Mount Royal University: Teaching Content in English.</p>
-  <p class="pub"><span class="y">2015</span>BCRP: actualización para profesores de Economía. CIES: Taller Regional en Economía y Recursos Naturales.</p>
-  <p class="pub"><span class="y">2003</span>Universidad de Piura: Diplomado en Administración Pública.</p>
-  <p class="sub">Idiomas</p>
+  <p class="pub"><span class="y">2015</span><es>BCRP: actualización para profesores de Economía. CIES: Taller Regional en Economía y Recursos Naturales.</es><en>BCRP: refresher course for economics professors. CIES: Regional Workshop on Economics and Natural Resources.</en></p>
+  <p class="pub"><span class="y">2003</span><es>Universidad de Piura: Diplomado en Administración Pública.</es><en>Universidad de Piura: Diploma in Public Administration.</en></p>
+  <p class="sub"><es>Idiomas</es><en>Languages</en></p>
   <div class="lang">
-    <div class="card"><h3>Español</h3><p>Lengua materna, con estudios especializados en lengua y literatura.</p></div>
-    <div class="card"><h3>Inglés</h3><p>Fluido (CPE y CAE). Profesor en todos los niveles del Centro Cultural Peruano Norteamericano; cuatro años en el sistema educativo de EE. UU.</p></div>
-    <div class="card"><h3>Francés</h3><p>Intermedio-avanzado (B2 completo).</p></div>
+    <div class="card"><h3><es>Español</es><en>Spanish</en></h3><p><es>Lengua materna, con estudios especializados en lengua y literatura.</es><en>Native, with specialized studies in language and literature.</en></p></div>
+    <div class="card"><h3><es>Inglés</es><en>English</en></h3><p><es>Fluido (CPE y CAE). Profesor en todos los niveles del Centro Cultural Peruano Norteamericano; cuatro años en el sistema educativo de EE. UU.</es><en>Fluent (CPE and CAE). Taught all levels at the Centro Cultural Peruano Norteamericano; four years in the U.S. school system.</en></p></div>
+    <div class="card"><h3><es>Francés</es><en>French</en></h3><p><es>Intermedio-avanzado (B2 completo).</es><en>Upper-intermediate (full B2).</en></p></div>
   </div>
 </section>
 </main>
 
 <footer><div class="wrap">© Gustavo Riesco Lind · <a href="mailto:griesco@aurumperu.com">griesco@aurumperu.com</a> · <a href="https://aurumperu.com" target="_blank" rel="noopener">aurumperu.com</a></div></footer>
+
+<script>
+(function(){
+  var r=document.documentElement,tb=document.getElementById('theme'),lb=document.getElementById('lang');
+  var T={es:{title:'Gustavo Riesco Lind · CV profesional',theme:['Cambiar a modo claro','Cambiar a modo oscuro'],lang:'Switch to English'},
+         en:{title:'Gustavo Riesco Lind · Professional CV',theme:['Switch to light mode','Switch to dark mode'],lang:'Cambiar a español'}};
+  function sys(){return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}
+  function cur(){return r.getAttribute('data-theme')||sys()}
+  function L(){return r.lang==='en'?'en':'es'}
+  function paint(){
+    var d=cur()==='dark',t=T[L()],s=t.theme[d?0:1];
+    tb.textContent=d?'\u2600':'\u263e';tb.setAttribute('aria-label',s);tb.title=s;
+    lb.textContent=L()==='en'?'ES':'EN';lb.setAttribute('aria-label',t.lang);lb.title=t.lang;
+    document.title=t.title;
+  }
+  paint();
+  tb.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}paint()});
+  lb.addEventListener('click',function(){var n=L()==='en'?'es':'en';r.lang=n;try{localStorage.setItem('lang',n)}catch(e){}paint()});
+})();
+</script>
 </body>
 </html>
